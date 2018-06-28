@@ -1,9 +1,15 @@
 #include<stdio.h>
-void main(){
-    int x=10;
-    int y=20;
-    int c;
-    c=x+y;
-    printf("%d",c);
+int main()
+{
+    int x,sum=0;
+    scanf("%d",&x);
+    for(;x;scanf("%d",&x))
+    {
+        if(x>0)
+        {
+            sum=sum+x;
+        }
+    }
+    printf("%d\n",sum);
     return 0;
 }
